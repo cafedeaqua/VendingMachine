@@ -30,7 +30,7 @@ before_install:
     - wait_for_emulator
 
 script:
- - android update project -p . --subprojects -t android-19
+ - android update project -p . --subprojects -t android-15
  - ant -f build.xml emma debug install
  - ant -f tests/build.xml emma debug install test
  
