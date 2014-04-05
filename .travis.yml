@@ -25,6 +25,9 @@ before_install:
     
     # Install required Android components.
     - android list sdk --extended -a
+    
+    # Make sure the emulator has started before running tests
+    - wait_for_emulator
 
 script:
  - android update project -p . --subprojects -t android-19
