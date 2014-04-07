@@ -7,6 +7,10 @@ jdk:
 notifications:
   email: true
 
+notifications:
+  webhooks:
+    - https://idobata.io/hook/22ff3a1b-28ad-49e9-8fda-3cfc8493f32a
+    
 env:
   matrix:
     - ANDROID_TARGET=android-19 EMULATOR_TARGET=${ANDROID_TARGET} ANDROID_SDKS=${ANDROID_TARGET},android-19,build-tools-19.0.3,sysimg-19 ANDROID_BUILD_TOOLS_VERSION=19.0.3 ANDROID_ABI=armeabi-v7a
